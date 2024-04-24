@@ -178,6 +178,19 @@ main {
   position: absolute;
   width: 6rem;
   aspect-ratio: 2/1;
+  background: none;
+  border: none;
+  background-image: url('./assets/ticket.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transform: rotate(40deg);
+}
+
+.game__btn:last-of-type {
+  aspect-ratio: 1/1;
+  background-image: url('./assets/chest.png');
+  transform: none;
 }
 
 .game__btn1 {
