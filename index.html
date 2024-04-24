@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
-    <title>Google Eid Carnval Game</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Eid Carnival Game</title>
+  </head>
+  <body>
+    <main>
+      <!-- START SECTION  -->
+      <section class="hero">
+        <div class="hero__content">
+          <img src="./assets/logo.png" alt="" class="hero__img" />
+          <h1>Carnival Game</h1>
+        </div>
+        <button class="hero__btn">Play Now!</button>
+      </section>
 
-<body>
-    
-<!-- START PAGE -->
-<section id="start">
-
-    <h1>Carnaval<br> Game</h1>
-
-    <!-- Change the ID of 'OnClick' according to the questions section ID  -->
-    <input type="button" value="Play Now!" class="playButton" onClick="document.getElementById('questions').scrollIntoView();"  />
-</section>
-
-    
-</body>
-
-
+      <!-- GAME SECTION  -->
+      <section class="game">
+        <div class="inner">
+          <button class="game__btn game__btn1"></button>
+          <button class="game__btn game__btn2"></button>
+          <button class="game__btn game__btn3"></button>
+          <button class="game__btn game__btn4"></button>
+          <button class="game__btn game__btn5"></button>
+        </div>
+        <div class="overlay">
+          <div class="overlay__inner">
+            <div class="modal modal1 overlay__modal">
+              <div class="modal__inner">
+                <form class="modal__form">
+                  <label for=""> How many Eids are there? </label>
+                  <input type="text" name="" id="" />
+                  <button type="submit" class="btn modal__btn">submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal overlay__modal overlay__modal2">
+              <div class="modal__inner">
+                <form class="modal__form">
+                  <label for=""> How many Eids are there? </label>
+                  <input type="text" name="" id="" />
+                  <button type="submit" class="btn modal__btn">submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal overlay__modal overlay__modal3">
+              <div class="modal__inner">
+                <form class="modal__form">
+                  <label for=""> How many Eids are there? </label>
+                  <input type="text" name="" id="" />
+                  <button type="submit" class="btn modal__btn">submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal overlay__modal overlay__modal4">
+              <div class="modal__inner">
+                <form class="modal__form">
+                  <label for=""> How many Eids are there? </label>
+                  <input type="text" name="" id="" />
+                  <button type="submit" class="btn modal__btn">submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal overlay__modal overlay__modal5">
+              <div class="modal__inner">
+                <form class="modal__form">
+                  <label for=""> How many Eids are there? </label>
+                  <input type="text" name="" id="" />
+                  <button type="submit" class="btn modal__btn">submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <button class="overlay__button"></button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
