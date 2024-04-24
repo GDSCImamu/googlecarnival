@@ -134,6 +134,7 @@ body {
 }
 
 main {
+  position: relative;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(2, minmax(100vh, auto));
@@ -171,7 +172,6 @@ main {
 }
 .game__inner {
   position: relative;
-  border: 1px solid red;
 }
 
 .game__btn {
@@ -206,6 +206,103 @@ main {
 }
 
 .overlay {
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  height: 100vh;
+  top: 0;
+  width: 100%;
+}
+
+.overlay__inner {
+  position: relative;
+  margin: auto 0;
+  padding: 0 0.5rem;
+}
+
+.question {
+  margin: 0 auto;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.question__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip .question__inner {
+  transform: rotateY(180deg);
+}
+
+.question__form,
+.question__hint {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  background-image: url('./assets/question.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.question__form > label {
+  font-size: 1.2rem;
+}
+
+.question__form > input {
+  border: none;
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+}
+
+.question__btn {
+  font-family: 'VT323', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.8);
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  background: none;
+  background-color: var(--pink);
+}
+
+.question__hint {
+  transform: rotateY(180deg);
+}
+
+.overlay__button {
+  position: absolute;
+  top: calc(-1rem - 40px);
+  right: calc(50% - 20px);
+  width: 40px;
+  aspect-ratio: 1/1;
+  color: var(--white);
+  border-radius: 50%;
+  border: none;
+  background-color: var(--pink);
+}
+
+.hidden {
   display: none;
-  border: 1px solid red;
 }
