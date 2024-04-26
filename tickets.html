@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div id="card" class="card">
+            <div class="front">
+                <div class="content">
+                    <p>How many Eids are there?</p>
+                    <input type="text" id="answer" placeholder="Enter your answer">
+                    <button onclick="checkAnswer()">Submit</button>
+                    <p id="error-message" style="color: red; display: none;">Try again!</p>
+                </div>
+
+            </div>
+            <div class="back">
+                <div class="content">
+                    <p>Hint: The card is on the table!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const card = document.getElementById("card");
+        function checkAnswer() {
+            const answer = document.getElementById("answer").value;
+            const errorMessage = document.getElementById("error-message");
+
+            if (answer.toLowerCase() === "two" || answer === "2") {
+                card.classList.add('flipped');  // Flips the card if the answer is correct
+                errorMessage.style.display = 'none';  // Hides error message
+            } else {
+                errorMessage.style.display = 'block';  // Shows error message if answer is wrong
+            }
+        }
+    </script>
+
+</body>
+
+</html>
