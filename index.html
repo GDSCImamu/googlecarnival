@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
@@ -24,27 +25,27 @@
           <img src="./assets/logo.png" alt="" class="hero__img" />
           <h1 class="heading hero__heading">Carnival Game</h1>
         </div>
-        <button class="btn hero__btn">Play Now!</button>
+        <button id="btnPlay" class="btn hero__btn">Play Now!</button>
       </section>
 
       <!-- GAME SECTION  -->
       <section class="game">
         <div class="game__inner">
-          <button class="game__btn game__btn1"></button>
-          <button class="game__btn game__btn2"></button>
-          <button class="game__btn game__btn3"></button>
-          <button class="game__btn game__btn4"></button>
-          <button class="game__btn game__btn5"></button>
+          <button data-index="1" class="game__btn game__btn1"></button>
+          <button data-index="2" class="game__btn game__btn2"></button>
+          <button data-index="3" class="game__btn game__btn3"></button>
+          <button data-index="4" class="game__btn game__btn4"></button>
+          <button data-index="5" class="game__btn game__btn5"></button>
         </div>
         <div class="overlay hidden">
           <div class="overlay__inner">
             <button class="overlay__button">X</button>
 
-            <div class=" question question1">
+            <div data-index="1" class="question question1 hidden">
               <div class="question__inner">
 
                 <form class="question__form">
-                  <label for=""> How many Eids are there? </label>
+                  <label for=""> 1 How many Eids are there? </label>
                   <input type="text" name="" id="" />
                   <button type="submit" class="question__btn">submit</button>
                 </form>
@@ -56,65 +57,65 @@
 
               </div>
             </div>
-            <div class=" question question2 hidden">
+            <div data-index="2" class="question question2 hidden">
               <div class="question__inner">
 
                 <form class="question__form">
-                  <label for=""> How many Eids are there? </label>
+                  <label for="">2 How many Eids are there? </label>
                   <input type="text" name="" id="" />
                   <button type="submit" class="question__btn">submit</button>
                 </form>
 
                 <div class="question__hint">
-                  <h2>Hint #1</h2>
+                  <h2>Hint #2</h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
                 </div>
 
               </div>
             </div>
-            <div class=" question question3 hidden">
+            <div data-index="3" class="question question3 hidden">
               <div class="question__inner">
 
                 <form class="question__form">
-                  <label for=""> How many Eids are there? </label>
+                  <label for="">3 How many Eids are there? </label>
                   <input type="text" name="" id="" />
                   <button type="submit" class="question__btn">submit</button>
                 </form>
 
                 <div class="question__hint">
-                  <h2>Hint #1</h2>
+                  <h2>Hint #3</h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
                 </div>
 
               </div>
             </div>
-            <div class=" question question4 hidden">
+            <div data-index="4" class="question question4 hidden">
               <div class="question__inner">
 
                 <form class="question__form">
-                  <label for=""> How many Eids are there? </label>
+                  <label for="">4 How many Eids are there? </label>
                   <input type="text" name="" id="" />
                   <button type="submit" class="question__btn">submit</button>
                 </form>
 
                 <div class="question__hint">
-                  <h2>Hint #1</h2>
+                  <h2>Hint #4</h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
                 </div>
 
               </div>
             </div>
-            <div class=" question question5 hidden">
+            <div data-index="5" class="question question5 hidden">
               <div class="question__inner">
 
                 <form class="question__form">
-                  <label for=""> How many Eids are there? </label>
+                  <label for="">5 How many Eids are there? </label>
                   <input type="text" name="" id="" />
                   <button type="submit" class="question__btn">submit</button>
                 </form>
 
                 <div class="question__hint">
-                  <h2>Hint #1</h2>
+                  <h2>Hint #5</h2>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
                 </div>
 
