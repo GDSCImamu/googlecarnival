@@ -1,128 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GDSC Carnival Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <!-- START SECTION  -->
-      <section class="hero">
-        <div class="hero__content">
-          <img src="./assets/logo.png" alt="" class="hero__img" />
-          <h1 class="heading hero__heading">Carnival Game</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Google Eid Carnval Game</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="navbar">
+            <img src="Logo.png" class="logo">
         </div>
-        <button id="btnPlay" class="btn hero__btn">Play Now!</button>
-      </section>
+    </header>
+    
+<!-- START PAGE -->
+<section id="start">
 
-      <!-- GAME SECTION  -->
-      <section class="game">
-        <div class="game__inner">
-          <button data-index="1" class="game__btn game__btn1"></button>
-          <button data-index="2" class="game__btn game__btn2"></button>
-          <button data-index="3" class="game__btn game__btn3"></button>
-          <button data-index="4" class="game__btn game__btn4"></button>
-          <button data-index="5" class="game__btn game__btn5"></button>
-        </div>
-        <div class="overlay hidden">
-          <div class="overlay__inner">
-            <button class="overlay__button">X</button>
+    <h1>Carnaval<br> Game</h1>
 
-            <div data-index="1" class="question question1 hidden">
-              <div class="question__inner">
+    <!-- Change the ID of 'OnClick' according to the questions section ID  -->
+    <input type="button" value="Play Now!" class="playButton" onClick="document.getElementById('questions').scrollIntoView();"  />
+</section>
 
-                <form class="question__form">
-                  <label for=""> 1 How many Eids are there? </label>
-                  <input type="text" name="" id="" />
-                  <button type="submit" class="question__btn">submit</button>
-                </form>
+    
+</body>
 
-                <div class="question__hint">
-                  <h2>Hint #1</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
-                </div>
 
-              </div>
-            </div>
-            <div data-index="2" class="question question2 hidden">
-              <div class="question__inner">
-
-                <form class="question__form">
-                  <label for="">2 How many Eids are there? </label>
-                  <input type="text" name="" id="" />
-                  <button type="submit" class="question__btn">submit</button>
-                </form>
-
-                <div class="question__hint">
-                  <h2>Hint #2</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
-                </div>
-
-              </div>
-            </div>
-            <div data-index="3" class="question question3 hidden">
-              <div class="question__inner">
-
-                <form class="question__form">
-                  <label for="">3 How many Eids are there? </label>
-                  <input type="text" name="" id="" />
-                  <button type="submit" class="question__btn">submit</button>
-                </form>
-
-                <div class="question__hint">
-                  <h2>Hint #3</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
-                </div>
-
-              </div>
-            </div>
-            <div data-index="4" class="question question4 hidden">
-              <div class="question__inner">
-
-                <form class="question__form">
-                  <label for="">4 How many Eids are there? </label>
-                  <input type="text" name="" id="" />
-                  <button type="submit" class="question__btn">submit</button>
-                </form>
-
-                <div class="question__hint">
-                  <h2>Hint #4</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
-                </div>
-
-              </div>
-            </div>
-            <div data-index="5" class="question question5 hidden">
-              <div class="question__inner">
-
-                <form class="question__form">
-                  <label for="">5 How many Eids are there? </label>
-                  <input type="text" name="" id="" />
-                  <button type="submit" class="question__btn">submit</button>
-                </form>
-
-                <div class="question__hint">
-                  <h2>Hint #5</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, nisi.</p>
-                </div>
-
-              </div>
-            </div>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
