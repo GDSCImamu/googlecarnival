@@ -4,13 +4,6 @@ body {
   background-size: cover;
 }
 
-.text {
-  /* text-align: center;
-  font-family: 'VT323', cursive;
-  font-size: 1.8rem;
-  color: var(--green); */
-}
-
 .btn {
   font-family: 'VT323', cursive;
   font-size: 2rem;
@@ -49,7 +42,7 @@ main {
 }
 
 .hero__img {
-  max-width: 10rem;
+  max-width: 20rem;
   margin: 0 auto 3rem;
 }
 
@@ -115,6 +108,10 @@ h1 {
 .playButton:hover {
   background-color: #e1778c;
 }
+
+/* Only Insert within this line - below */
+
+/* Only Insert within this line - above */
 
 /* Utils */
 .hidden {
