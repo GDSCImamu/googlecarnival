@@ -1,53 +1,126 @@
-
 /* START PAGE */
-body{
- 
-    background: url(photo/Startbackground.jpg)  center top no-repeat;
-    background-size: cover;
+body {
+  background: url(photo/Startbackground.jpg) center top no-repeat;
+  background-size: cover;
 }
 
-/* HEADER */
-.navbar{
-    grid-row: 1/2;
-    grid-column: 1/2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    padding: 0.8rem;
-}
-.logo{
-    display: grid;
-    place-content: center;
-    animation: slideRight 0.6s ease forwards;
-    margin-bottom: 30px;
-    width: 400px;
+.text {
+  /* text-align: center;
+  font-family: 'VT323', cursive;
+  font-size: 1.8rem;
+  color: var(--green); */
 }
 
-h1{
-    margin-top: 100px;
-    font-family: 'Silkscreen',sans-serif;
-    text-shadow: 2px 2px 3px rgb(8, 8, 8);
-    text-align: center;
-    font-size: 40px;
-    color: #DF5873;
+.btn {
+  font-family: 'VT323', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.8);
+  padding: 0.25rem 1.25rem;
+  border: none;
+  border-radius: 9999px;
+  background: none;
+  background-color: var(--pink);
 }
 
-.playButton{
-    background-color: #DF5873;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 7px 16px;
-    text-shadow: 2px 2px 3px rgb(8, 8, 8);;
-    font-family: 'Silkscreen',sans-serif;
-    font-size: large;
-    font-weight: bold;
-    margin-top: 270px;
-    margin-left: 115px;
+body {
+  display: grid;
 }
 
-.playButton:hover{
-    background-color: #e1778c;
+main {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, minmax(100vh, auto));
 }
-/* END OF START PAGE */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 0 0;
+  background-image: url('./assets/hero background.png');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__img {
+  max-width: 10rem;
+  margin: 0 auto 3rem;
+}
+
+.hero__btn {
+  margin: 5rem 0 0;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-image: url('./assets/questions bg.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.game__inner {
+  position: relative;
+}
+
+.game__btn {
+  position: absolute;
+  width: 6rem;
+  aspect-ratio: 2/1;
+  background: none;
+  border: none;
+  background-image: url('./assets/ticket.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transform: rotate(40deg);
+}
+
+.game__btn:last-of-type {
+  aspect-ratio: 1/1;
+  background-image: url('./assets/chest.png');
+  transform: none;
+}
+
+h1 {
+  margin-top: 100px;
+  font-family: 'Silkscreen', sans-serif;
+  text-shadow: 2px 2px 3px rgb(8, 8, 8);
+  text-align: center;
+  font-size: 40px;
+  color: #df5873;
+}
+
+.playButton {
+  background-color: #df5873;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 16px;
+  text-shadow: 2px 2px 3px rgb(8, 8, 8);
+  font-family: 'Silkscreen', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin-top: 270px;
+  margin-left: 115px;
+}
+
+.playButton:hover {
+  background-color: #e1778c;
+}
+
+/* Utils */
+.hidden {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
