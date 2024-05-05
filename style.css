@@ -92,7 +92,7 @@ address {
 /* Custom properties */
 :root {
   /* primary colors */
-  --pink: #d37e86;
+  --pink: #e35b5d;
 
   /* neutral colors */
   --white: hsl(0, 0%, 100%);
@@ -100,16 +100,18 @@ address {
 
 .heading {
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2.5rem;
-  line-height: 2em;
+  font-family: 'Sancreek', serif;
+  font-size: 3.5rem;
+  line-height: 1.5em;
+  letter-spacing: 0.07em;
   color: var(--pink);
   text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
+  max-width: 10ch;
 }
 
 .btn {
-  font-family: 'VT323', cursive;
+  font-family: 'Sancreek', serif;
   font-size: 2rem;
   text-align: center;
   color: var(--white);
@@ -151,7 +153,7 @@ main {
 }
 
 .hero__btn {
-  margin: 5rem 0 0;
+  margin: 3.5rem 0 0;
 }
 
 .game {
@@ -265,6 +267,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  padding: 1rem;
 }
 
 .question__form > label {
@@ -284,7 +287,7 @@ main {
 }
 
 .question__btn {
-  font-family: 'VT323', cursive;
+  font-family: 'Sancreek', serif;
   font-size: 1.5rem;
   text-align: center;
   color: var(--white);
@@ -299,6 +302,11 @@ main {
 
 .question__hint {
   transform: rotateY(180deg);
+}
+
+.question__hint h2 {
+  font-family: 'Sancreek', serif;
+  margin-bottom: 1rem;
 }
 
 .overlay__button {
