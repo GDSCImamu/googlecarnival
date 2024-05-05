@@ -6,7 +6,7 @@ const overlay = document.querySelector('.overlay');
 const btnClose = document.querySelector('.overlay__button');
 
 // Variables
-const answers = ['test1', 'test2', 'test3', 'test4', 'test5'];
+const answers = ['orange', 'second place', 'water', 'tea', 'orange'];
 const answerBox = [false, false, false, false];
 
 const monitorPlayBtn = () => {
